@@ -3,14 +3,14 @@
   "title": "Task 1 - Create Assessment",
   "steps": [
     {
-      "file": "OCAT/config.example.json",
-      "description": "# config.json\n\n1. Duplicate this file by using copy + paste\n2. Rename it to config.json\n3. Modify the contents of the file to fit your environment (you should only need to supply YOUR_NAME in the \"name\" attribute)",
-      "line": 1
-    },
-    {
       "file": "OCAT/package.json",
       "description": "# Start Application\n\nREMINDER: In order to run the application, you will have to run some commands.\n_______________________________________________\n\nCOMMANDS:\n\nOpen a terminal within vscode and type these commands into that terminal and hit \"enter\" or \"return\":\n\n- Navigate into the OCAT directory (folder) with the command \"`cd OCAT/`\"\n- `npm install`\n- split your vscode terminal window into two\n  - Terminal 1\n    - `npm run dev`\n  - Terminal 2\n    - `npm run build:dev`\n- Open the browser and go to http://localhost:8000 to verify that your application is running",
       "line": 12
+    },
+    {
+      "file": "OCAT/config.example.json",
+      "description": "# config.json\n\n1. Duplicate this file by using copy + paste\n2. Rename it to config.json\n3. Modify the contents of the file to fit your environment (you should only need to supply YOUR_NAME in the \"name\" attribute)",
+      "line": 1
     },
     {
       "file": "OCAT/client/pages/Assessments/NewAssessment.jsx",
