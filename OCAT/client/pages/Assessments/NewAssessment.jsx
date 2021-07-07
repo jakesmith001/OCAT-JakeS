@@ -15,7 +15,7 @@ export const NewAssessment = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="prevEncounter">Previous Contact with CAT Judicial System: </label>
       <select {...register("prevEncounter", {required: 'Select an option'})} name="prevEncounter" id="prevEncounter">
-        <option value="" default></option>
+        <option value=""></option>
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select>
@@ -23,7 +23,7 @@ export const NewAssessment = () => {
       
       <label htmlFor="numAltercations">Number of altercations with other cats: </label>
       <select {...register("numAltercations", {required: 'Select an option'})} name="numAltercations" id="numAltercations">
-        <option value="" default></option>
+        <option value=""></option>
         <option value="0">0-3</option>
         <option value="1">3+</option>
       </select>
@@ -31,15 +31,15 @@ export const NewAssessment = () => {
       
       <label htmlFor="ownerAltercations">Number of altercations with owner: </label>
       <select {...register("ownerAltercations", {required: 'Select an option'})} name="ownerAltercations" id="ownerAltercations">
-        <option value="" default></option>
+        <option value=""></option>
         <option value="0">0-10</option>
         <option value="1">10+</option>
       </select>
       {errors.ownerAltercations && <p>{errors.ownerAltercations.message}</p>}
       
-      <label htmlFor="playsWithDogs">Plays well with dogs: </label> {/*TODO: Need to ask if the way they have the scores set up in assessment_info.md is correct. The plays well with dogs score seems to contradict the yes/no scores in the first question. */}
+      <label htmlFor="playsWithDogs">Plays well with dogs: </label>
       <select {...register("playsWithDogs", {required: 'Select an option'})} name="playsWithDogs" id="playsWithDogs">
-        <option value="" default></option>
+        <option value=""></option>
         <option value="0">Yes</option>
         <option value="1">No</option>
       </select>
@@ -47,7 +47,7 @@ export const NewAssessment = () => {
       
       <label htmlFor="hissing">Hisses at strangers: </label>
       <select {...register("hissing", {required: 'Select an option'})} name="hissing" id="hissing">
-        <option value="" default></option>
+        <option value=""></option>
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select>

@@ -1,9 +1,12 @@
+
 const router = require(`express`).Router();
 const { AssessmentService } = require(`../../libs`);
+
 
 router.post(`/submit`, (req, res, next) => {
   try {
     const { assessment } = req.body;
+    // console.log(assessment)
     AssessmentService.submit(assessment);
     // call the submit function from the server/libs/AssessmentService
   } catch (error) {
