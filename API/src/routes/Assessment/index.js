@@ -11,7 +11,7 @@ module.exports = server => {
       try {
         const { assessment } = req.params;
         
-        console.log(assessment);
+        AssessmentService.submit(assessment)
         // verify that your data is making it here to the API by using console.log(assessment);
         // call the AssessmentService.submit function from the API/src/microservices/Assessment/ and
         // supply the correct parameters

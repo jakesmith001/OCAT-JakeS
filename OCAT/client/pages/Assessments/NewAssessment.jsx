@@ -13,6 +13,12 @@ export const NewAssessment = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+      <label htmlFor='cat_name'>Cat Name: </label>
+      <input {...register("cat_name", {required: 'Please enter your cat\'s name', maxLength: 20})} name='cat_name' id='cat_name'/>
+
+      <label htmlFor='cat_date_of_birth'>Cat Date of Birth: </label>
+      <input type='date' {...register("cat_date_of_birth", {required: 'Please enter your cat\'s date of birth', })} name='cat_date_of_birth' id='cat_date_of_birth'/>
+
       <label htmlFor="prevEncounter">Previous Contact with CAT Judicial System: </label>
       <select {...register("prevEncounter", {required: 'Select an option'})} name="prevEncounter" id="prevEncounter">
         <option value=""></option>
